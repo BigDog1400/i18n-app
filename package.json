@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
-    "extract-messages": "formatjs extract \"src/**/*.{js,ts,tsx,.jsx}\" --out-file src/translations/messages/es.json --id-interpolation-pattern [sha512:contenthash:base64:6]  --ignore src/vite-env.d.ts"
+    "extract-messages": "formatjs extract \"src/**/*.{js,ts,tsx,.jsx}\" --out-file src/translations/messages/es.json --id-interpolation-pattern [sha512:contenthash:base64:6]  --ignore src/vite-env.d.ts",
+    "compile-messages": "formatjs compile-folder --ast  src/translations/messages src/translations/compiled-messages"
   },
   "dependencies": {
     "react": "^18.2.0",
